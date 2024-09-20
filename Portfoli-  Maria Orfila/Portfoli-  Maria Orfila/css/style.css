@@ -1,4 +1,4 @@
-body{
+/*body{
 background-color: #c8b6ff;
 }
 footer{
@@ -12,16 +12,48 @@ h1{
 }
 h2{
     color: #7b2cbf;
+}*/
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
 }
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+:root {
+    --font-principal: "Playfair Display", system-ui;
+    --font-secundaria: "Bebas Neue", system-ui;
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    --pes-font: 400;
+    --pes-negreta:900;
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    --colorClar:#c8b6ff;
+    --colorFosc:#7630ac;
+    --colorResaltar:#a04fdd;
+
+    --tamany-h1:3rem;
+    --tamany-h2:2.5rem;
+    --tamany-h3:1.25rem;
+    --tamany-body:1rem;
+
+   
+}
+
+@media (min-width: 800px){
+    :root{
+        --tamany-h1:4.5rem;
+        --tamany-h2:3.75rem;
+        --tamany-h4:1.5rem;
+        --tamany-body:1.125em;
+
+
+    }
+}
+
+body {
+    background: var(--colorClar);
+    color: var(--colorFosc);
+    margin: 0;
+    font-family: var(--font-principal);
+    font-size: var(--tamany-body);
+    line-height: 1,5;
+}
