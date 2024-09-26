@@ -151,3 +151,31 @@ padding: .25em 1em;
 .subtitol-intro{
     display: inline-block;
 }
+.meusServeis{
+    background-color: var(--colorFosc);
+    color: var(--colorClar);
+    background-image: url('../img/Fotos meves/fav.jpg');
+    background-size: cover;
+    background-blend-mode:multiply;
+}
+.titol-serveis{
+    color: var(--colorFosc);
+    position: relative;
+}
+
+
+@media (min-width:800px){
+    .serveis{
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto ;
+        margin-right: auto;
+    }
+    .servei + .servei{
+        margin: 2em;
+    }
+}
+.servei{
+    max-width: 500px;
+    margin: 0 auto;
+}
