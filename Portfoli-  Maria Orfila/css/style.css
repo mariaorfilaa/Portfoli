@@ -43,15 +43,15 @@ h2{
         --tamany-h1:4rem;
         --tamany-h2:3rem;
         --tamany-h4:1.5rem;
-        --tamany-body:1.125em;
+        --tamany-body:1.125rem;
 
         --sombra: 0.4em 0.4em 0.7em rgba(0,0,0,0.7);
     }
 }
-nav{
+nav {
     display: none;
 }
-strong{
+strong {
     font-weight:var(--pes-negreta) ;
 }
 
@@ -63,10 +63,10 @@ body {
     font-size: var(--tamany-body);
     line-height: 1;
 }
-section{
+section {
     padding: 5em 2em;
 }
-img{
+img {
     display: block;
     max-width: 100%;
 }
@@ -89,7 +89,7 @@ h3 {
     font-size: var(--tamany-h3);
 }
 
-p{
+p {
     font-size: var(--tamany-body);
 }
 .titol{
@@ -154,15 +154,16 @@ padding: .25em 1em;
 .meusServeis{
     background-color: var(--colorFosc);
     color: var(--colorClar);
-    background-image: url('../img/Fotos meves/fav.jpg');
+    background-image: url('../img/Fotos meves/auroras boreals.webp');
     background-size: cover;
     background-blend-mode:multiply;
-}
-.titol-serveis{
-    color: var(--colorFosc);
-    position: relative;
+    text-align: center;
 }
 
+.titol-serveis{
+    color: var(#240036);
+    position: relative;
+}
 
 @media (min-width:800px){
     .serveis{
@@ -172,10 +173,54 @@ padding: .25em 1em;
         margin-right: auto;
     }
     .servei + .servei{
-        margin: 2em;
+        margin-left: 10em;
     }
 }
-.servei{
-    max-width: 500px;
+.sobrejo{
+    max-width: 1000px;
     margin: 0 auto;
+}
+.sobrejo-img{
+    box-shadow: var(--sombra);
+}
+@media (min-width:600px){
+    .sobrejo{
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-areas:
+        "title img"
+        "subtitle img"
+        "text img";
+        grid-column-gap: 2em;
+    }
+.titol-sobrejo{
+    grid-area: title;
+    }
+.subtitol-sobrejo{
+    grid-column: 1/-1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(200px + 4em);
+    align-self:start;
+    margin: none;    
+}
+.sobrejo-img{
+    grid-area:img ;
+    position: relative;
+    z-index: 2;
+    }
+}
+.subtitol-works{
+    color: var(--colorResaltar);
+    font-weight: var(--pes-negreta);
+    margin-bottom: 2em;
+
+}
+.works{
+    background-color: var(--colorFosc);
+    color: var(--colorClar);
+    align-self: center;
 }
