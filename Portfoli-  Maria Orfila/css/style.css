@@ -205,7 +205,7 @@ padding: .25em 1em;
     padding-left: 1em;
     padding-right: calc(200px + 4em);
     align-self:start;
-    margin: none;    
+    margin: auto;    
 }
 .sobrejo-img{
     grid-area:img ;
@@ -223,4 +223,20 @@ padding: .25em 1em;
     background-color: var(--colorFosc);
     color: var(--colorClar);
     align-self: center;
+}
+.portfoli {
+    display: grid;
+    grid-template-columns: repeat (auto-fit, minmax(200px, 1fr));
+
+}
+.portfoli-obj{
+    overflow: hidden;
+}
+.portfoli-img{
+    transition: transform 750ms cubic-bezier(.5, 0, .5, 1), opacity 250ms linear;
+}
+
+.portfoli-img:hover{
+    transform: scale(1,2);
+    opacity:.5;
 }
