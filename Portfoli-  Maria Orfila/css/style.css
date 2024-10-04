@@ -180,9 +180,11 @@ padding: .25em 1em;
     max-width: 1000px;
     margin: 0 auto;
 }
+
 .sobrejo-img{
     box-shadow: var(--sombra);
-}
+    animation:blur-in-expand 0.3s linear both} @keyframes blur-in-expand{0%{transform:scale(0);filter:blur(12px);opacity:0}100%{transform:scale(1);filter:blur(0);opacity:1}}
+
 @media (min-width:600px){
     .sobrejo{
         display: grid;
@@ -192,7 +194,8 @@ padding: .25em 1em;
         "subtitle img"
         "text img";
         grid-column-gap: 2em;
-    }
+}
+  }
 .titol-sobrejo{
     grid-area: title;
     }
@@ -212,7 +215,7 @@ padding: .25em 1em;
     position: relative;
     z-index: 2;
     }
-}
+
 .subtitol-works{
     color: var(--colorResaltar);
     font-weight: var(--pes-negreta);
@@ -226,14 +229,17 @@ padding: .25em 1em;
 }
 .portfoli {
     display: grid;
-    grid-template-columns: repeat (auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 
 }
 .portfoli-obj{
-    overflow: hidden;
+    overflow: hidden ;
 }
+
 .portfoli-img{
-    transition: transform 750ms cubic-bezier(.5, 0, .5, 1), opacity 250ms linear;
+    animation:rotate-scale-down 1s linear both}
+    @keyframes rotate-scale-down
+    {0%{transform:scale(1) rotateZ(0)}50%{transform:scale(.5) rotateZ(180deg)}100%{transform:scale(1) rotateZ(360deg)}
 }
 
 .portfoli-img:hover{
