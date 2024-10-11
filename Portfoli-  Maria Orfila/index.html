@@ -10,24 +10,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/697c3cef37.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./script.js"></script>
     <title>Maria Orfila</title>
     
 </head>
 
 <body>
     <header>
-        <div>
-            <img src="./img/Logos/Logo lila petit.png" width="8%">
+        <div  class="logo">
+            <img src="./img/Logos/Logo lila petit.png">
         </div>
-        <button>
-            <span>Navegador principal</span>
+        <button class="desplegable">
+            <span id="hola" class="hamburguesa"></span>
         </button>
-        <nav>
-            <ul>
-                <li> <a href="#Intro">Maria Orfila</a></li>
-                <li> <a href="#Serveis">Serveis</a></li>
-                <li> <a href="#Sobre jo">Sobre jo</a></li>
-                <li> <a href="#Treballs">Treballs</a></li>
+        <nav class="menu" id="m">
+            <ul class="menu-lista">
+                <li class="menu-item"> <a href="#Intro" class="menu-link"       id="b1">Maria Orfila</a></li>
+                <li class="menu-item"> <a href="#Serveis" class="menu-link"      id="b2">Serveis</a></li>
+                <li class="menu-item"> <a href="#Sobre jo" class="menu-link"  id="b3">Sobre jo</a></li>
+                <li class="menu-item"> <a href="#Treballs" class="menu-link"  id="b4">Treballs</a></li>
             </ul>
         </nav>
     </header>
@@ -37,38 +38,39 @@
 
         <img src="img/Fotos meves/foto fornells.JPG" class="intro-img">
     </section>
-    <section id="#Serveis" class="meusServeis">
+
+    <section id="Serveis" class="meusServeis">
         <h1 class="titol titol-serveis">Els meus serveis</h1>
         <div class="serveis">
             <div class="servei">
                 <h2><strong>Fotogràfa</strong></h2>
-                <p>Càmera Canon EOS</p></div>
+            </div>
                 
             <div class="servei">
                 <h2><strong>Modelo</strong></h2>
-                <p>Levis</p>
-            </div>
+
             <div class="servei">
                 <h2><strong>Influencer</strong></h2>
-                <p>Instagramer de 300 mil seguidors</p>
             </div>
          </div>
-         <a href="Serveis" class="btn">Treballs</a>
+         <a href="#Treballs" class="btn">Treballs</a>
     </section>
 
-    <section id="Sobrejo" class="sobrejo">
+    <section id="Sobre jo" class="sobrejo">
         <h2 class="titol titol-sobrejo"><strong>Sobre jo</strong></h2>
         <p class="subtitol subtitol-sobrejo">Sóc de Sant Climent</p>
         <div>
-            <p>M'agrada molt escoltar música</p>
-            <p>En estiu m'encanta explorar les platges de Menorca</p>
+            <p>Sóc de Sant Climent, un petit poble que sempre m'ha proporcionat un fort vincle amb la natura i la tranquil·litat </p>
+            <p> La música ocupa un lloc especial en la meva vida, ja que m'acompanya en els meus moments de creativitat i desconnexió</p>
+            <p> Durant l'estiu, res em fa més feliç que explorar les platges de Menorca. La meva afició és explorar les cales i veure la posta de sol </p>
+            <p>Connectar amb l'illa i gaudir de la seva bellesa incomparable, que em serveix d'inspiració tant en la meva vida personal com creativa.</p>
         </div>
         <img src="img/Fotos meves/foto binibeca.JPG" class="sobrejo-img">
     </section>
 
-    <section id="Works" class="works">
+    <section id="Treballs" class="treballs">
         <h2 class="titol titol-works">Els meus treballs</h2>
-        <p class="subtitol subtitol-works">Comunicació Audiovisual</p>
+        <p class="subtitol subtitol-works"></p>
         <div class="portfoli">
             <a href="https://www.levi.com/ES/es_ES/?camp=PaidSearch_DR_AO_LV_BP_B_ES_ROAS_GLE_es_Brand-Pure-Core&gad_source=1&gclid=EAIaIQobChMIhv6ZiZvMiAMVT0ZBAh1jBQQxEAAYASAAEgKj3PD_BwE&gclsrc=aw.ds" class="portfoli-obj">
                 <img src="noves img/levis pants.jpg" class="portfoli-img"> 
@@ -77,11 +79,11 @@
                 <img src="noves img/perones levis.jpg" class="portfoli-img">
             </a>
             <a href="https://elitemodelmanagement.com/barcelona/city.web"class="portfoli-obj">
-                <img src="noves img/levisjjj (1).avif" class="portfoli-img">
+                <img src="noves img/levisbossa.avif" class="portfoli-img">
 
             </a>
             <a href="https://www.istockphoto.com/es?utm_medium=cpc&utm_source=GOOGLE&utm_campaign=ES_Head_Photo_ES&utm_content=Photo_Bank_Phrase&utm_term=banco+fotos&program=free-trial&gad_source=1&gclid=EAIaIQobChMIx-6TrZvMiAMVl4toCR0o1hTDEAAYASAAEgLFz_D_BwE&gclsrc=aw.ds" class="portfoli-obj">
-                <img src="noves img/persona fotos.jpg" class="portfoli-img">
+                <img src="noves img/persona fototogrofa.jpg" class="portfoli-img">
 
             </a>
             <a href="https://www.livepicsphoto.com/" class="portfoli-obj">
@@ -111,11 +113,34 @@
     <footer class="footer">
     <a href="mailto:morfila19549@iesjoanramis.org" class="link">morfila19549iesjoanramis.org</a>
             <ul class="lista">
-                <li class="item-list"> <a href="https://classroom.google.com/c/NzEyNDAxNjQxMzgw" class="link-list"><i class="fa-solid fa-school"></i></a> </li>
-                <li class="item-list"> <a href="https://github.com/?authuser=0" class="link-list"><i class="fa-solid fa-share"></i></a></li>
-                <li class="item-list"> <a href="https://www.instagram.com/" class="link-list"><i class="fa-brands fa-instagram"></i></a></li>
-                <li class="item-list"> <a href="https://x.com/?lang=ca" class="link-list"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li class="item-list"> <a href="https://classroom.google.com/c/NzEyNDAxNjQxMzgw" class="link-list"><i class="fa-solid fa-school fa-fade"></i></a> </li>
+                <li class="item-list"> <a href="https://github.com/?authuser=0" class="link-list"><i class="fa-brands fa-github fa-fade"></i></a></li>
+                <li class="item-list"> <a href="https://www.instagram.com/" class="link-list"><i class="fa-brands fa-instagram fa-fade"></i></a></li>
+                <li class="item-list"> <a href="https://x.com/?lang=ca" class="link-list"><i class="fa-brands fa-x-twitter fa-fade"></i></a></li>
             </ul>
     </footer>
 </body>
+<script>
+     document.getElementById("hola").addEventListener("click", function(){
+    document.getElementById("m").classList.add("maria");
+    })
+
+    document.getElementById("b1").addEventListener("click", function(){
+    document.getElementById("m").classList.remove("maria");
+    })
+    
+    document.getElementById("b2").addEventListener("click", function(){
+    document.getElementById("m").classList.remove("maria");
+    })
+
+    document.getElementById("b3").addEventListener("click", function (){
+    document.getElementById("m").classList.remove("maria");
+    })
+
+    document.getElementById("b4").addEventListener("click", function (){
+    document.getElementById("m").classList.remove("maria");
+    })
+
+
+</script>
 </html>
