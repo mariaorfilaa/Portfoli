@@ -162,15 +162,16 @@ padding: .25em 1em;
     position: relative;
 }
 
-@media (min-width:800px){
+@media (min-width:200px){
     .serveis{
         display: flex;
         max-width: 1000px;
         margin-left: auto ;
         margin-right: auto;
+        margin-bottom: 3em;
     }
     .servei + .servei{
-        margin-left: 10em;
+        margin-left: 5em;
     }
 }
 .sobrejo{
@@ -247,13 +248,13 @@ padding: .25em 1em;
     display: inline-block;
     background-color: var(--colorResaltar);
     color: var(--colorClar);
-    padding: 5em 1.25em;
+    padding: 0.5em 1.25em;
     text-decoration: none;
     cursor: pointer;
     font-size: 1rem;
     font-weight: var(--pes-negreta);
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 0.8px;
 }
 
 .btn:hover {
